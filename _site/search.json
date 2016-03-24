@@ -3,7 +3,7 @@
   
     {
       "title"			: "Are some teachers just meaner than others?",
-      "link"			: "http://localhost:4000/code-posts/datathon/",
+      "link"			: "http://joanney3h.github.io/code-posts/datathon/",
       "excerpt"		: "San Diego Data Library Datathon"
     }
   
@@ -11,7 +11,7 @@
   
     ,{
       "title"			: "My first real blog post",
-      "link"			: "http://localhost:4000/blog/first-real-blog-post/",
+      "link"			: "http://joanney3h.github.io/blog/first-real-blog-post/",
       "excerpt"		: "I have too many things to say about"
     }
   
@@ -19,7 +19,7 @@
   
     ,{
       "title"			: "Code Sample post 1",
-      "link"			: "http://localhost:4000/articles/code-post-1/",
+      "link"			: "http://joanney3h.github.io/articles/code-post-1/",
       "excerpt"		: "Testing the excerpt section of the code sample post"
     }
   
@@ -27,7 +27,7 @@
   
     ,{
       "title"			: "Predicting the Impact of Small-Scale Fisheries",
-      "link"			: "http://localhost:4000/code-posts/big-pixel/",
+      "link"			: "http://joanney3h.github.io/code-posts/big-pixel/",
       "excerpt"		: "Big Pixel Initiative Hackathon"
     }
   
@@ -35,7 +35,7 @@
   
     ,{
       "title"			: "Exponent/Stratechery (Podcast/Website)",
-      "link"			: "http://localhost:4000/cool-links/exponent/",
+      "link"			: "http://joanney3h.github.io/cool-links/exponent/",
       "excerpt"		: "My current favorite podcast to listen and think about"
     }
   
@@ -43,7 +43,7 @@
   
     ,{
       "title"			: "MathJax Example",
-      "link"			: "http://localhost:4000/blog/mathjax-example/",
+      "link"			: "http://joanney3h.github.io/blog/mathjax-example/",
       "excerpt"		: "MathJax is a simple way of including Tex/LaTex/MathML based mathematics in HTML webpages. To get up and running you need to include the MathJax script in the header of your github pages page, and then write some maths. For LaTex, there are two delimiters you need to know about, one for block or displayed mathematics  ... , and the other for inline mathematics  ... ."
     }
   
@@ -51,7 +51,7 @@
   
     ,{
       "title"			: "Hello World",
-      "link"			: "http://localhost:4000/blog/hello-world/",
+      "link"			: "http://joanney3h.github.io/blog/hello-world/",
       "excerpt"		: "You’ll find this post in your _posts directory - edit this post and re-build (or run with the -w switch) to see your changes!To add new posts, simply add a file in the _posts directory that follows the convention: YYYY-MM-DD-name-of-post.ext."
     }
   
@@ -59,7 +59,7 @@
   
     ,{
       "title"			: "Override Author Byline Test Post",
-      "link"			: "http://localhost:4000/articles/author-override/",
+      "link"			: "http://joanney3h.github.io/articles/author-override/",
       "excerpt"		: "An article to test overriding the default site author."
     }
   
@@ -67,7 +67,7 @@
   
     ,{
       "title"			: "Syntax Highlighting Post",
-      "link"			: "http://localhost:4000/articles/code-highlighting-post/",
+      "link"			: "http://joanney3h.github.io/articles/code-highlighting-post/",
       "excerpt"		: "Demo post displaying the various ways of highlighting code in Markdown."
     }
   
@@ -75,7 +75,7 @@
   
     ,{
       "title"			: "Sample Link Post",
-      "link"			: "http://localhost:4000/articles/sample-link-post/",
+      "link"			: "http://joanney3h.github.io/articles/sample-link-post/",
       "excerpt"		: "Example and code for using link posts."
     }
   
@@ -83,7 +83,7 @@
   
     ,{
       "title"			: "A Post with a Video",
-      "link"			: "http://localhost:4000/articles/video-post/",
+      "link"			: "http://joanney3h.github.io/articles/video-post/",
       "excerpt"		: "Custom written post descriptions are the way to go… if you’re not lazy."
     }
   
@@ -91,7 +91,7 @@
   
     ,{
       "title"			: "Post with Large Feature Image and Text",
-      "link"			: "http://localhost:4000/articles/readability-feature-post/",
+      "link"			: "http://joanney3h.github.io/articles/readability-feature-post/",
       "excerpt"		: "Custom written post descriptions are the way to go… if you’re not lazy."
     }
   
@@ -99,7 +99,7 @@
   
     ,{
       "title"			: "A Post with Images",
-      "link"			: "http://localhost:4000/articles/sample-post-images/",
+      "link"			: "http://joanney3h.github.io/articles/sample-post-images/",
       "excerpt"		: "Examples and code for displaying images in posts."
     }
   
@@ -107,7 +107,7 @@
   
     ,{
       "title"			: "Testing Readability with a Bunch of Text",
-      "link"			: "http://localhost:4000/articles/readability-post/",
+      "link"			: "http://joanney3h.github.io/articles/readability-post/",
       "excerpt"		: "A ton of text to test readability."
     }
   
@@ -115,7 +115,7 @@
   
     ,{
       "title"			: "Sample Post",
-      "link"			: "http://localhost:4000/articles/sample-post/",
+      "link"			: "http://joanney3h.github.io/articles/sample-post/",
       "excerpt"		: "Just about everything you’ll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
     }
   
@@ -133,7 +133,7 @@
   
     ,{
       "title"			: "Coding Projects",
-      "link"			: "http://localhost:4000/code/",
+      "link"			: "http://joanney3h.github.io/code/",
       "excerpt"		: "An archive of articles sorted by date."
     }
   
@@ -141,7 +141,7 @@
   
     ,{
       "title"			: "Things I think are cool",
-      "link"			: "http://localhost:4000/cool-links/",
+      "link"			: "http://joanney3h.github.io/cool-links/",
       "excerpt"		: "An archive of posts sorted by date."
     }
   
@@ -152,16 +152,8 @@
 
   
     ,{
-      "title"			: "Theme Setup",
-      "link"			: "http://localhost:4000/theme-setup/",
-      "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
-    }
-  
-
-  
-    ,{
       "title"			: "About the Jekyll Theme",
-      "link"			: "http://localhost:4000/about/",
+      "link"			: "http://joanney3h.github.io/about/",
       "excerpt"		: "So Simple is a responsive Jekyll theme for your words and images."
     }
   

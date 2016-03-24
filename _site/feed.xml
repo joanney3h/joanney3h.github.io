@@ -2,26 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Joanne Yeh</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2016-03-23T17:33:33-07:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="http://joanney3h.github.io/feed.xml" />
+<link rel="alternate" type="text/html" href="http://joanney3h.github.io" />
+<updated>2016-03-23T18:04:41-07:00</updated>
+<id>http://joanney3h.github.io/</id>
 <author>
   <name></name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://joanney3h.github.io/</uri>
   <email>joanneyeh1234@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Are some teachers just meaner than others?]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/code-posts/datathon/" />
-  <id>http://localhost:4000/code-posts/datathon</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/code-posts/datathon/" />
+  <id>http://joanney3h.github.io/code-posts/datathon</id>
   <published>2016-03-23T00:00:00-07:00</published>
   <updated>2016-03-23T00:00:00-07:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
@@ -31,20 +31,20 @@
 
 &lt;p&gt;Complete project &lt;a href=&quot;http://ds3.io/?page_id=151&quot;&gt;here&lt;/a&gt; as well as on my &lt;a href=&quot;https://github.com/joanney3h&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/code-posts/datathon/&quot;&gt;Are some teachers just meaner than others?&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on March 23, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/datathon/&quot;&gt;Are some teachers just meaner than others?&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on March 23, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[My first real blog post]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/first-real-blog-post/" />
-  <id>http://localhost:4000/blog/first-real-blog-post</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/blog/first-real-blog-post/" />
+  <id>http://joanney3h.github.io/blog/first-real-blog-post</id>
   <published>2016-03-22T00:00:00-07:00</published>
   <updated>2016-03-22T00:00:00-07:00</updated>
   <author>
     <name>Joanne Yeh</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
@@ -54,58 +54,58 @@
 
 &lt;p&gt;Random text that I’m typing.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/first-real-blog-post/&quot;&gt;My first real blog post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on March 22, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/blog/first-real-blog-post/&quot;&gt;My first real blog post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on March 22, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Code Sample post 1]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/code-post-1/" />
-  <id>http://localhost:4000/articles/code-post-1</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/articles/code-post-1/" />
+  <id>http://joanney3h.github.io/articles/code-post-1</id>
   <published>2016-03-22T00:00:00-07:00</published>
   <updated>2016-03-22T00:00:00-07:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
     &lt;h1 id=&quot;first-post-in-the-code-section&quot;&gt;First post in the code section.&lt;/h1&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/code-post-1/&quot;&gt;Code Sample post 1&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on March 22, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/articles/code-post-1/&quot;&gt;Code Sample post 1&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on March 22, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Predicting the Impact of Small-Scale Fisheries]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/code-posts/big-pixel/" />
-  <id>http://localhost:4000/code-posts/big-pixel</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/code-posts/big-pixel/" />
+  <id>http://joanney3h.github.io/code-posts/big-pixel</id>
   <published>2016-02-23T00:00:00-08:00</published>
   <updated>2016-02-23T00:00:00-08:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
     &lt;p&gt;Article about the hackathon &lt;a href=&quot;http://ucsdnews.ucsd.edu/pressrelease/university_students_turn_satellite_images_into_policy_analysis&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/code-posts/big-pixel/&quot;&gt;Predicting the Impact of Small-Scale Fisheries&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on February 23, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/big-pixel/&quot;&gt;Predicting the Impact of Small-Scale Fisheries&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on February 23, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Exponent/Stratechery (Podcast/Website)]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/cool-links/exponent/" />
-  <id>http://localhost:4000/cool-links/exponent</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/cool-links/exponent/" />
+  <id>http://joanney3h.github.io/cool-links/exponent</id>
   <published>2015-11-01T00:00:00-07:00</published>
   <updated>2015-11-01T00:00:00-07:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
@@ -115,20 +115,20 @@
 
 &lt;p&gt;Long and thought-provoking!&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/cool-links/exponent/&quot;&gt;Exponent/Stratechery (Podcast/Website)&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on November 01, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/cool-links/exponent/&quot;&gt;Exponent/Stratechery (Podcast/Website)&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on November 01, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[MathJax Example]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/mathjax-example/" />
-  <id>http://localhost:4000/blog/mathjax-example</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/blog/mathjax-example/" />
+  <id>http://joanney3h.github.io/blog/mathjax-example</id>
   <published>2015-08-10T05:08:50-07:00</published>
   <updated>2015-08-10T05:08:50-07:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
@@ -153,20 +153,20 @@ mathjax: true
 
 &lt;p&gt;The only thing to look out for is the escaping of the backslash when using markdown, so the delimiters become &lt;code class=&quot;highlighter-rouge&quot;&gt;\\[ ... \\]&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;\\( ... \\)&lt;/code&gt; for inline and block maths respectively.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/mathjax-example/&quot;&gt;MathJax Example&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on August 10, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/blog/mathjax-example/&quot;&gt;MathJax Example&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on August 10, 2015.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Hello World]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/hello-world/" />
-  <id>http://localhost:4000/blog/hello-world</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/blog/hello-world/" />
+  <id>http://joanney3h.github.io/blog/hello-world</id>
   <published>2014-08-08T12:39:55-07:00</published>
   <updated>2014-08-08T12:39:55-07:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
@@ -188,20 +188,20 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on August 08, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/blog/hello-world/&quot;&gt;Hello World&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on August 08, 2014.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Override Author Byline Test Post]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/author-override/" />
-  <id>http://localhost:4000/articles/author-override</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/articles/author-override/" />
+  <id>http://joanney3h.github.io/articles/author-override</id>
   <published>2014-06-19T00:00:00-07:00</published>
   <updated>2014-06-19T00:00:00-07:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     
   </author>
   <content type="html">
@@ -236,20 +236,20 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;billy_rick&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/author-override/&quot;&gt;Override Author Byline Test Post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on June 19, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/articles/author-override/&quot;&gt;Override Author Byline Test Post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on June 19, 2014.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Syntax Highlighting Post]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/code-highlighting-post/" />
-  <id>http://localhost:4000/articles/code-highlighting-post</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/articles/code-highlighting-post/" />
+  <id>http://joanney3h.github.io/articles/code-highlighting-post</id>
   <published>2013-08-16T00:00:00-07:00</published>
   <updated>2013-08-16T00:00:00-07:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
@@ -353,39 +353,39 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/code-highlighting-post/&quot;&gt;Syntax Highlighting Post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on August 16, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/articles/code-highlighting-post/&quot;&gt;Syntax Highlighting Post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on August 16, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Sample Link Post]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/sample-link-post/" />
-  <id>http://localhost:4000/articles/sample-link-post</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/articles/sample-link-post/" />
+  <id>http://joanney3h.github.io/articles/sample-link-post</id>
   <published>2013-08-12T00:00:00-07:00</published>
   <updated>2013-08-12T00:00:00-07:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
     &lt;p&gt;So Simple Theme now supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To activate just add &lt;code class=&quot;highlighter-rouge&quot;&gt;link: http://url-you-want-linked&lt;/code&gt; to the post’s YAML front matter and you’re done.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/sample-link-post/&quot;&gt;Sample Link Post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on August 12, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/articles/sample-link-post/&quot;&gt;Sample Link Post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on August 12, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[A Post with a Video]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/video-post/" />
-  <id>http://localhost:4000/articles/video-post</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/articles/video-post/" />
+  <id>http://joanney3h.github.io/articles/video-post</id>
   <published>2013-06-25T00:00:00-07:00</published>
   <updated>2013-06-25T00:00:00-07:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
@@ -401,21 +401,21 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 &lt;iframe src=&quot;//player.vimeo.com/video/98146708?title=0&amp;amp;byline=0&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/video-post/&quot;&gt;A Post with a Video&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on June 25, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/articles/video-post/&quot;&gt;A Post with a Video&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on June 25, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Post with Large Feature Image and Text]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/readability-feature-post/" />
-  <id>http://localhost:4000/articles/readability-feature-post</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/articles/readability-feature-post/" />
+  <id>http://joanney3h.github.io/articles/readability-feature-post</id>
   <updated>2013-06-30T00:00:00-00:00</updated>
   <published>2013-05-23T00:00:00-07:00</published>
   
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
@@ -460,20 +460,20 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/readability-feature-post/&quot;&gt;Post with Large Feature Image and Text&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on May 23, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/articles/readability-feature-post/&quot;&gt;Post with Large Feature Image and Text&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on May 23, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[A Post with Images]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/sample-post-images/" />
-  <id>http://localhost:4000/articles/sample-post-images</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/articles/sample-post-images/" />
+  <id>http://joanney3h.github.io/articles/sample-post-images</id>
   <published>2013-05-22T00:00:00-07:00</published>
   <updated>2013-05-22T00:00:00-07:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
@@ -531,20 +531,20 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 	&lt;figcaption&gt;Three images.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/sample-post-images/&quot;&gt;A Post with Images&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on May 22, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/articles/sample-post-images/&quot;&gt;A Post with Images&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on May 22, 2013.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Testing Readability with a Bunch of Text]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/readability-post/" />
-  <id>http://localhost:4000/articles/readability-post</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/articles/readability-post/" />
+  <id>http://joanney3h.github.io/articles/readability-post</id>
   <published>2012-05-22T00:00:00-07:00</published>
   <updated>2012-05-22T00:00:00-07:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
@@ -589,21 +589,21 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 &lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/readability-post/&quot;&gt;Testing Readability with a Bunch of Text&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on May 22, 2012.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/articles/readability-post/&quot;&gt;Testing Readability with a Bunch of Text&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on May 22, 2012.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Sample Post]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/articles/sample-post/" />
-  <id>http://localhost:4000/articles/sample-post</id>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/articles/sample-post/" />
+  <id>http://joanney3h.github.io/articles/sample-post</id>
   <updated>2013-05-31T00:00:00-00:00</updated>
   <published>2011-03-10T00:00:00-08:00</published>
   
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
@@ -625,7 +625,7 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
 
-&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;pull-right&quot;&gt;&lt;img src=&quot;http://joanney3h.github.io/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H&lt;sub&gt;2&lt;/sub&gt;O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times &lt;cite&gt;(That’s a citation)&lt;/cite&gt;. &lt;u&gt;Underline&lt;/u&gt;. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
 
@@ -727,7 +727,7 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 &lt;div&gt;&lt;a href=&quot;http://mademistakes.com&quot; class=&quot;btn&quot;&gt;This is a button&lt;/a&gt;&lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/articles/sample-post/&quot;&gt;Sample Post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://localhost:4000&quot;&gt;Joanne Yeh&lt;/a&gt; on March 10, 2011.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/articles/sample-post/&quot;&gt;Sample Post&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on March 10, 2011.&lt;/p&gt;
   </content>
 </entry>
 

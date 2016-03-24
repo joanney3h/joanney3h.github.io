@@ -5,7 +5,7 @@ locale: en_US
 description: My personal webpage and portfolio
 logo: site-logo.png
 search: true
-url: http://localhost:4000
+url: http://joanney3h.github.io
 
 # Jekyll configuration
 
