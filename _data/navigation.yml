@@ -1,0 +1,28 @@
+# Site navigation links
+
+- title: About
+  url: /about/
+
+- title: Articles
+  url: /articles/
+
+- title: Theme Setup
+  url: /theme-setup/
+
+- title: About Me
+  url: /about-me/
+
+- title: Code Portfolio
+  url: /code/
+
+- title: Design
+  url: /design/
+
+- title: Blog
+  url: /blog/
+
+- title: Cool links
+  url: /cool-links/
+
+- title: Search
+  url: /search/
