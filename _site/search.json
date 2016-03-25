@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Computational Statistics",
+      "link"			: "http://joanney3h.github.io/code-posts/comp-stats-math/",
+      "excerpt"		: "Projects in Computational Statistics"
+    }
+  
+
+  
+    ,{
       "title"			: "Are some teachers just meaner than others?",
       "link"			: "http://joanney3h.github.io/code-posts/datathon/",
       "excerpt"		: "San Diego Data Library Datathon"

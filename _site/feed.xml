@@ -4,13 +4,38 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://joanney3h.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://joanney3h.github.io" />
-<updated>2016-03-24T19:37:20-07:00</updated>
+<updated>2016-03-25T15:59:09-07:00</updated>
 <id>http://joanney3h.github.io/</id>
 <author>
   <name></name>
   <uri>http://joanney3h.github.io/</uri>
   <email>joanneyeh1234@gmail.com</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Computational Statistics]]></title>
+  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/code-posts/comp-stats-math/" />
+  <id>http://joanney3h.github.io/code-posts/comp-stats-math</id>
+  <published>2016-03-25T00:00:00-07:00</published>
+  <updated>2016-03-25T00:00:00-07:00</updated>
+  <author>
+    <name></name>
+    <uri>http://joanney3h.github.io</uri>
+    <email>joanneyeh1234@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;math-185&quot;&gt;Math 185&lt;/h1&gt;
+
+&lt;p&gt;I was part of a class that taught us how to use R to analyze things in statistics. You can see samples of my work below.&lt;/p&gt;
+
+&lt;h1 id=&quot;bootstrap-sampling&quot;&gt;Bootstrap Sampling&lt;/h1&gt;
+
+&lt;p&gt;Example here.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/comp-stats-math/&quot;&gt;Computational Statistics&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on March 25, 2016.&lt;/p&gt;
+  </content>
+</entry>
 
 
 <entry>
@@ -85,12 +110,27 @@
   <published>2016-02-23T00:00:00-08:00</published>
   <updated>2016-02-23T00:00:00-08:00</updated>
   <author>
-    <name></name>
+    <name>Joanne Yeh</name>
     <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;Article about the hackathon &lt;a href=&quot;http://ucsdnews.ucsd.edu/pressrelease/university_students_turn_satellite_images_into_policy_analysis&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;Article about the hackathon &lt;a href=&quot;http://ucsdnews.ucsd.edu/pressrelease/university_students_turn_satellite_images_into_policy_analysis&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://ds3.io/?page_id=161&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My team won the category for Best Research Question.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;figcaption&gt;&lt;a href=&quot;http://ds3.io/?page_id=161&quot; title=&quot;Pitch Presentation&quot;&gt;Source Here&lt;/a&gt;.&lt;/figcaption&gt;
+	&lt;a href=&quot;http://ds3.io/wp-content/uploads/2015/07/bigPixel.key.pdf&quot;&gt;&lt;img src=&quot;http://ds3.io/wp-content/uploads/2015/07/bigPixel.key.pdf&quot; alt=&quot;image&quot; /&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;At the hackathon, we were asked to come up with a well-thought out plan to use the newly acquired extreme quality imagery for good. Some teams thought broadly about the potential use cases, but we focused on identifying the simplest significant insight we could derive from previously unavailable higher quality data. Although we say a simple idea, we were really looking for something that would scale well to have maximum impact with the minimum friction to analyze.&lt;/p&gt;
+
+&lt;p&gt;My team, consisting of two undergraduates and two SIO Phds, came up with the idea to algorithmically identify different types of fishing boats in the ocean. Although large commercial fisheries must account for their catches, the majority of the fishing in the world by volume is done by small-scale fishermen who operate independently and without regulation.&lt;/p&gt;
+
+&lt;p&gt;Because our analysis narrows in on such a specific goal, the computer vision methods to identify fishing boats from cruises and cargo boats is quite simple and just involves comparing the outlined shape and color of the boats. We will supply the machine learning algorithm with a small training set hand-tagged and open source the identification of any hazy matches.&lt;/p&gt;
+
+&lt;p&gt;Although we start very small and specific, counting fishing boats with satellite imagery is an extremely scaleable way to fill in the black hole of fishing data in previously data-poor countries. It would give us way more tools to help fishermen around the world maintain a sustainable fishing level. We can also inform governments with this data to make better regulations to fishing where there is little to no restrictions before.  Overall, an efficient way to methodically process this data will provide many more  people ways to make responsible data-driven decisions for the future of the ocean wildlife.&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/big-pixel/&quot;&gt;Predicting the Impact of Small-Scale Fisheries&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on February 23, 2016.&lt;/p&gt;
   </content>
