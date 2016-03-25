@@ -3,7 +3,6 @@ layout: page
 title:
 excerpt: "Math, Computers, and Economics"
 masthead: true
-image: 
 ---
 
 # Current:
@@ -15,3 +14,5 @@ I've had a mix of academic and industry experience, in the areas concerning cons
 <a markdown="0" href="/files/joanne_yeh_resume.pdf" class="btn">Printer friendly resume!</a>
 
 or **[email me](mailto:joanneyeh1234@gmail.com)** to speak about what I can do at your company.
+
+![cows](/images/cows.jpg)

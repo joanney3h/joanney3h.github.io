@@ -1,5 +1,4 @@
 # Site wide configuration
-
 title: Joanne Yeh
 locale: en_US
 description: My personal webpage and portfolio
@@ -47,24 +46,24 @@ titlecase: true
 
 
 # Site owner
-owner: 
+owner:
   name:
   avatar: bio-photo.jpg
   email: joanneyeh1234@gmail.com
   disqus-shortname:
   twitter: #username
   facebook: #username
-  github: #username
+  github: joanney3h
   stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
-  instagram: #username
+  linkedin: joanneyeh
+  instagram: joanney3h
   flickr: #username
   tumblr: #username
   pinterest: #username
   weibo: #userid
   google:
     plus: #username
-    analytics:
+    analytics: UA-75591306-1
     verify:
     ad-client:
     ad-slot:
