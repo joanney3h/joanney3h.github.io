@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://joanney3h.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://joanney3h.github.io" />
-<updated>2016-03-28T23:47:30-07:00</updated>
+<updated>2016-03-29T01:39:30-07:00</updated>
 <id>http://joanney3h.github.io/</id>
 <author>
   <name></name>
@@ -20,18 +20,53 @@
   <published>2016-03-25T00:00:00-07:00</published>
   <updated>2016-03-25T00:00:00-07:00</updated>
   <author>
-    <name></name>
+    <name>Joanne Yeh</name>
     <uri>http://joanney3h.github.io</uri>
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
     &lt;h1 id=&quot;math-185&quot;&gt;Math 185&lt;/h1&gt;
 
-&lt;p&gt;I was part of a class that taught us how to use R to analyze things in statistics. You can see samples of my work below.&lt;/p&gt;
+&lt;p&gt;I took a class that taught us how to use R to analyze things in statistics. This was an advanced elective that presumes general statistics knowledge and is focused on exploring the subtleties between different methods. Samples of the classwork and learnings below.&lt;/p&gt;
 
-&lt;h1 id=&quot;bootstrap-sampling&quot;&gt;Bootstrap Sampling&lt;/h1&gt;
+&lt;h2 id=&quot;power-analysis&quot;&gt;Power Analysis&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Because just knowing the p-value isn’t good enough.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Example here.&lt;/p&gt;
+&lt;p&gt;Wrote code that showed how the proportion of samples rejected increases as the the distribution is decreasing in uniformity. T is the value of the difference from uniformity. The power of test is bewteen 1 and 0 and indicates the likelihood of finding an effect that exists given the effect size and sample size.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;chisq.power&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  
+  &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numeric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# create a dummy vector to insert output into (initial vector)
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;P_t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seq.int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# uniform distribution between 1 and 2k
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;Pvector&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;numeric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  
+  &lt;span class=&quot;n&quot;&gt;p1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;p2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# assign probabilities to Pvector
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;Pvector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p1&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;+1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Pvector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p2&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;P_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prob&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Pvector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;as.factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# convert samples into factors
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;xtable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# get counts of factors
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chisq.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xtable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p.value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.05&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# set i index of D to 1 if true
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# the proportion of samples rejected goes up as t goes up
+&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;# as expected since as t goes up, the distribution is decreasingly uniform
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;xvals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seq.int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.0025&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# vector of x tick marks
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yvals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lapply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xvals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chisq.power&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# get yvalues  
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xvals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yvals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Power Graph&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;t values between 0 and 1/2*k&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Power of Test&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/power-graph.png&quot; alt=&quot;graph&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/comp-stats-math/&quot;&gt;Computational Statistics&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on March 25, 2016.&lt;/p&gt;
   </content>
@@ -52,7 +87,18 @@
   <content type="html">
     &lt;h1 id=&quot;local-data-hackathon-project&quot;&gt;Local Data Hackathon Project&lt;/h1&gt;
 
-&lt;p&gt;My team and I were presented with variable large data sets from partners of the hackathon. We decided to dive deeper into data from a nearby school for underprivledged kids. With no guidance, we looked at the data and wanted to see if we could find in the data, reasons for misbehavior later on.&lt;/p&gt;
+&lt;p&gt;My team and I were presented with various large data sets from partners of the hackathon. We decided to dive deeper into data from a nearby school for underprivileged and homeless children. After looking at the available data, we saw some interesting disciplinary trends that led us to ask the questions about the fairness of certain teachers.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;While some who are subjected to discipline can feel targeted by certain teachers, does the data reflect such discrimination?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We did all the analysis in Python and presented our findings in a Jupyter Notebooks. After our reports were selected as finalists, we gave a final presentation in a powerpoint with our takeaways.&lt;/p&gt;
+
+&lt;p&gt;Our presentation &lt;a href=&quot;http://ds3.io/wp-content/uploads/2015/07/DatathonPresentation-2.pdf&quot;&gt;here:&lt;/a&gt;
+&lt;img src=&quot;http://ds3.io/wp-content/uploads/2015/07/DatathonPresentation-2.pdf&quot; alt=&quot;here&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The main analysis &lt;a href=&quot;http://nbviewer.jupyter.org/github/LizIzhikevich/0x606AA55/blob/master/EducationQuestion2.ipynb&quot;&gt;here:&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Additional California Demographics Analysis &lt;a href=&quot;http://nbviewer.jupyter.org/github/LizIzhikevich/0x606AA55/blob/master/CaliforniaDemographics.ipynb&quot;&gt;here:&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Complete project &lt;a href=&quot;http://ds3.io/?page_id=151&quot;&gt;here&lt;/a&gt; as well as on my &lt;a href=&quot;https://github.com/joanney3h&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
 
@@ -130,12 +176,20 @@
     <email>joanneyeh1234@gmail.com</email>
   </author>
   <content type="html">
-    &lt;h1 id=&quot;is-there-a-lower-bound-to-post-length&quot;&gt;Is there a lower bound to post length?!&lt;/h1&gt;
+    &lt;h1 id=&quot;is-there-a-lower-bound-to-post-length&quot;&gt;Is there a lower bound to post length?&lt;/h1&gt;
 
 &lt;p&gt;Everything on the internet is getting shorter and shorter. 
-Post length is clearly trending downwards as seen by the progression from Novel -&amp;gt; Magazine -&amp;gt; Online News -&amp;gt; Buzzfeed -&amp;gt; etc. Or LiveJournal/Xanga -&amp;gt; MySpace -&amp;gt; Facebook -&amp;gt; Twitter -&amp;gt; Snapchat. Or Match.com -&amp;gt; OkCupid -&amp;gt; Tinder.&lt;/p&gt;
+Post length is clearly trending downwards as seen by the progression from:&lt;/p&gt;
 
-&lt;p&gt;What’s next?! Honest question. I’m betting my money on any company who can make a dating app faster than Tinder.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Novel -&amp;gt; Magazine -&amp;gt; Online News -&amp;gt; Buzzfeed -&amp;gt; etc.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;LiveJournal/Xanga -&amp;gt; MySpace -&amp;gt; Facebook -&amp;gt; Twitter -&amp;gt; Snapchat.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Match.com -&amp;gt; OkCupid -&amp;gt; Tinder.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-next&quot;&gt;What’s next?!&lt;/h3&gt;
+
+&lt;p&gt;Honest question. I’m betting my money on any company who can make a dating app faster than Tinder.&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/blog/hello-world/&quot;&gt;Tinder is too complicated&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on August 08, 2014.&lt;/p&gt;
   </content>

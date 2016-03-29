@@ -4,7 +4,7 @@
     {
       "title"			: "Computational Statistics",
       "link"			: "http://joanney3h.github.io/code-posts/comp-stats-math/",
-      "excerpt"		: "Projects in Computational Statistics"
+      "excerpt"		: "What I learned in Computational Stats"
     }
   
 
@@ -36,7 +36,7 @@
     ,{
       "title"			: "Tinder is too complicated",
       "link"			: "http://joanney3h.github.io/blog/hello-world/",
-      "excerpt"		: "Is there a lower bound to post length?!"
+      "excerpt"		: "Is there a lower bound to post length?"
     }
   
 
@@ -67,7 +67,7 @@
   
     ,{
       "title"			: "Coding Projects",
-      "link"			: "http://joanney3h.github.io/code/",
+      "link"			: "http://joanney3h.github.io/code-posts/",
       "excerpt"		: "An archive of articles sorted by date."
     }
   

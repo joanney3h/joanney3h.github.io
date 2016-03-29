@@ -6,15 +6,15 @@
 <head>
 <meta charset="utf-8">
 <title>Computational Statistics &#8211; Joanne Yeh</title>
-<meta name="description" content="Projects in Computational Statistics">
+<meta name="description" content="What I learned in Computational Stats">
 <meta name="keywords" content="">
 
 
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="Computational Statistics">
-<meta name="twitter:description" content="Projects in Computational Statistics">
+<meta name="twitter:description" content="What I learned in Computational Stats">
 
-
+<meta name="twitter:creator" content="@joanney3h">
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://joanney3h.github.io/images/site-logo.png">
@@ -23,7 +23,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Computational Statistics">
-<meta property="og:description" content="Projects in Computational Statistics">
+<meta property="og:description" content="What I learned in Computational Stats">
 <meta property="og:url" content="http://joanney3h.github.io/code-posts/comp-stats-math/">
 <meta property="og:site_name" content="Joanne Yeh">
 
@@ -103,7 +103,7 @@ mixpanel.init("b3750a80b246abde2982520d5f015923");</script>
 		    <li><a href="http://joanney3h.github.io/about-me/" >About Me</a></li>
 		  
 		    
-		    <li><a href="http://joanney3h.github.io/code/" >Code Portfolio</a></li>
+		    <li><a href="http://joanney3h.github.io/code-posts/" >Code Portfolio</a></li>
 		  
 		    
 		    <li><a href="http://joanney3h.github.io/design/" >Design</a></li>
@@ -145,14 +145,14 @@ mixpanel.init("b3750a80b246abde2982520d5f015923");</script>
       <footer class="entry-meta">
         
         
-          <img src="http://joanney3h.github.io/images/bio-photo.jpg" class="bio-photo" alt=" bio photo"></a>
+          <img src="http://joanney3h.github.io/images/bio-photo.jpg" class="bio-photo" alt="Joanne Yeh bio photo"></a>
         
-        <span class="author vcard">By <span class="fn"></span></span>
+        <span class="author vcard">By <span class="fn">Joanne Yeh</span></span>
         <span class="entry-date date published"><time datetime="2016-03-25T00:00:00-07:00"><i class="fa fa-calendar-o"></i> March 25, 2016</time></span>
         
         
         <span class="social-share-twitter">
-  <a href="https://twitter.com/intent/tweet?hashtags=&amp;text=Computational%20Statistics&amp;url=http://joanney3h.github.io/code-posts/comp-stats-math/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+  <a href="https://twitter.com/intent/tweet?hashtags=&amp;text=Computational%20Statistics&amp;url=http://joanney3h.github.io/code-posts/comp-stats-math/&amp;via=joanney3h" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
 </span>
 <span class="social-share-facebook">
   <a href="https://www.facebook.com/sharer/sharer.php?u=http://joanney3h.github.io/code-posts/comp-stats-math/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
@@ -166,11 +166,46 @@ mixpanel.init("b3750a80b246abde2982520d5f015923");</script>
       <div class="entry-content">
         <h1 id="math-185">Math 185</h1>
 
-<p>I was part of a class that taught us how to use R to analyze things in statistics. You can see samples of my work below.</p>
+<p>I took a class that taught us how to use R to analyze things in statistics. This was an advanced elective that presumes general statistics knowledge and is focused on exploring the subtleties between different methods. Samples of the classwork and learnings below.</p>
 
-<h1 id="bootstrap-sampling">Bootstrap Sampling</h1>
+<h2 id="power-analysis">Power Analysis</h2>
+<p><em>Because just knowing the p-value isn’t good enough.</em></p>
 
-<p>Example here.</p>
+<p>Wrote code that showed how the proportion of samples rejected increases as the the distribution is decreasing in uniformity. T is the value of the difference from uniformity. The power of test is bewteen 1 and 0 and indicates the likelihood of finding an effect that exists given the effect size and sample size.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">chisq.power</span> <span class="o">&lt;-</span> <span class="k">function</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">B</span> <span class="o">=</span> <span class="m">2000</span><span class="p">)</span> <span class="p">{</span>
+  
+  <span class="n">D</span> <span class="o">&lt;-</span> <span class="n">numeric</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>  <span class="c1"># create a dummy vector to insert output into (initial vector)
+</span>  <span class="n">P_t</span> <span class="o">&lt;-</span> <span class="n">seq.int</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="o">*</span><span class="n">k</span><span class="p">)</span> <span class="c1"># uniform distribution between 1 and 2k
+</span>  <span class="n">Pvector</span> <span class="o">&lt;-</span> <span class="n">numeric</span><span class="p">(</span><span class="m">2</span><span class="o">*</span><span class="n">k</span><span class="p">)</span>
+  
+  <span class="n">p1</span> <span class="o">=</span> <span class="m">1</span><span class="o">/</span><span class="p">(</span><span class="m">2</span><span class="o">*</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="n">t</span>
+  <span class="n">p2</span> <span class="o">=</span> <span class="m">1</span><span class="o">/</span><span class="p">(</span><span class="m">2</span><span class="o">*</span><span class="n">k</span><span class="p">)</span> <span class="o">-</span> <span class="n">t</span>
+  
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="m">1</span><span class="o">:</span><span class="n">k</span><span class="p">)</span> <span class="p">{</span>  <span class="c1"># assign probabilities to Pvector
+</span>    <span class="n">Pvector</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="n">p1</span>
+  <span class="p">}</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="p">(</span><span class="n">k</span><span class="m">+1</span><span class="p">)</span><span class="o">:</span><span class="p">(</span><span class="m">2</span><span class="o">*</span><span class="n">k</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">Pvector</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="n">p2</span>
+  <span class="p">}</span>
+  
+  <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="m">1</span><span class="o">:</span><span class="n">B</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">x</span> <span class="o">&lt;-</span> <span class="n">sample</span><span class="p">(</span><span class="n">P_t</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">100</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">Pvector</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">as.factor</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># convert samples into factors
+</span>    <span class="n">xtable</span> <span class="o">=</span> <span class="n">table</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># get counts of factors
+</span>    <span class="k">if</span> <span class="p">(</span><span class="n">chisq.test</span><span class="p">(</span><span class="n">xtable</span><span class="p">)</span><span class="o">$</span><span class="n">p.value</span> <span class="o">&lt;</span> <span class="m">0.05</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">D</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="m">1</span>  <span class="c1"># set i index of D to 1 if true
+</span>    <span class="p">}</span>
+  <span class="p">}</span>  <span class="c1"># the proportion of samples rejected goes up as t goes up
+</span>     <span class="c1"># as expected since as t goes up, the distribution is decreasingly uniform
+</span>  <span class="n">mean</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="n">xvals</span> <span class="o">=</span> <span class="n">seq.int</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="o">/</span><span class="m">12</span><span class="p">,</span> <span class="m">0.0025</span><span class="p">)</span>  <span class="c1"># vector of x tick marks
+</span><span class="n">yvals</span> <span class="o">=</span> <span class="n">lapply</span><span class="p">(</span><span class="n">xvals</span><span class="p">,</span> <span class="n">chisq.power</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="m">100</span><span class="p">,</span> <span class="n">B</span> <span class="o">=</span> <span class="m">2000</span><span class="p">)</span>  <span class="c1"># get yvalues  
+</span><span class="n">plot</span> <span class="p">(</span><span class="n">xvals</span><span class="p">,</span> <span class="n">yvals</span><span class="p">,</span> <span class="n">main</span> <span class="o">=</span> <span class="s2">"Power Graph"</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s2">"t values between 0 and 1/2*k"</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">"Power of Test"</span><span class="p">)</span></code></pre></figure>
+
+<p><img src="/images/power-graph.png" alt="graph" /></p>
 
         
       </div><!-- /.entry-content -->
