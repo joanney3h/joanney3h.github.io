@@ -2,6 +2,7 @@
 layout: post
 title: "Tinder is too complicated"
 modified:
+author: joanne_yeh
 categories: blog
 excerpt:
 tags: []
