@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "SQL Analysis with the Chinook DB",
+      "link"			: "http://joanney3h.github.io/code-posts/chinook-sql/",
+      "excerpt"		: "Answering some questions with SQL"
+    }
+  
+
+  
+    ,{
       "title"			: "Computational Statistics",
       "link"			: "http://joanney3h.github.io/code-posts/comp-stats-math/",
       "excerpt"		: "What I learned in Computational Stats"
