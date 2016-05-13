@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tinder is too complicated"
+title: "Shorter and shorter posts"
 modified:
 author: joanne_yeh
 categories: blog
