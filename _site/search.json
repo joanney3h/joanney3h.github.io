@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Less is More: How small retail companies leverage choice overload to grow ",
+      "link"			: "http://joanney3h.github.io/case/glossier/",
+      "excerpt"		: "Understanding brand success through behavioral economics"
+    }
+  
+
+  
+    ,{
       "title"			: "SQL Analysis with the Chinook DB",
       "link"			: "http://joanney3h.github.io/code-posts/chinook-sql/",
       "excerpt"		: "Answering some questions with SQL"
@@ -37,14 +45,6 @@
       "title"			: "Exponent/Stratechery (Podcast/Website)",
       "link"			: "http://joanney3h.github.io/cool-links/exponent/",
       "excerpt"		: "My current favorite podcast to listen and think about"
-    }
-  
-
-  
-    ,{
-      "title"			: "Shorter and shorter posts",
-      "link"			: "http://joanney3h.github.io/blog/hello-world/",
-      "excerpt"		: "Is there a lower bound to post length?"
     }
   
 
