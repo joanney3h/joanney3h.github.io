@@ -18,8 +18,16 @@
 
   
     ,{
-      "title"			: "Intercom Pop Up Example",
+      "title"			: "Intercom Mini Pop Up Example",
       "link"			: "http://joanney3h.github.io/advisor/intercom-samp/",
+      "excerpt"		: "Example Page"
+    }
+  
+
+  
+    ,{
+      "title"			: "Intercom New Pop Up Example",
+      "link"			: "http://joanney3h.github.io/advisor/intercom-new-samp/",
       "excerpt"		: "Example Page"
     }
   
