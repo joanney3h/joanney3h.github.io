@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SQL Analysis with the Chinook DB
+author: joanne_yeh
 excerpt: "Answering some questions with SQL"
 categories: code-posts
 comments: true
