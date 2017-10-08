@@ -2,13 +2,13 @@
 - title: About Me
   url: //
 
-- title: Resume
-  url: http://joanney3h.github.io/files/joanne_yeh_resume.pdf
+#- title: Resume
+#  url: http://joanney3h.github.io/files/joanne_yeh_resume.pdf
 
-- title: Advisor
-  url: /advisor/
+#- title: Advisor
+#  url: /advisor/
 
-- title: Code Portfolio
+- title: Code
   url: /code-posts/
 
 - title: Design
