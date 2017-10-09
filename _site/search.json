@@ -2,38 +2,6 @@
 
   
     {
-      "title"			: "Full Embedded Typeform Page",
-      "link"			: "http://joanney3h.github.io/advisor/samp-advisor/",
-      "excerpt"		: "Example Page"
-    }
-  
-
-  
-    ,{
-      "title"			: "Pop Up Typeform Example",
-      "link"			: "http://joanney3h.github.io/advisor/popup-samp/",
-      "excerpt"		: "Example Page"
-    }
-  
-
-  
-    ,{
-      "title"			: "Intercom Mini Pop Up Example",
-      "link"			: "http://joanney3h.github.io/advisor/intercom-samp/",
-      "excerpt"		: "Example Page"
-    }
-  
-
-  
-    ,{
-      "title"			: "Intercom New Pop Up Example",
-      "link"			: "http://joanney3h.github.io/advisor/intercom-new-samp/",
-      "excerpt"		: "Example Page"
-    }
-  
-
-  
-    ,{
       "title"			: "Less is More: How small retail companies leverage choice overload to grow ",
       "link"			: "http://joanney3h.github.io/case/glossier/",
       "excerpt"		: "Understanding brand success through behavioral economics"
@@ -90,16 +58,16 @@
 
   
     ,{
-      "title"			: "Coding Projects",
-      "link"			: "http://joanney3h.github.io/code-posts/",
-      "excerpt"		: "An archive of articles sorted by date."
+      "title"			: "Design",
+      "link"			: "http://joanney3h.github.io/design/",
+      "excerpt"		: "Things I’ve drawn with a computer"
     }
   
 
   
     ,{
       "title"			: "Things I think are cool",
-      "link"			: "http://joanney3h.github.io/cool-links/",
+      "link"			: "http://joanney3h.github.io/random/",
       "excerpt"		: "An archive of posts sorted by date."
     }
   
@@ -112,12 +80,10 @@
 
   
     ,{
-      "title"			: "Test Advisor",
-      "link"			: "http://joanney3h.github.io/advisor/",
-      "excerpt"		: "Advisor Landing Page Samples"
+      "title"			: "Coding Projects",
+      "link"			: "http://joanney3h.github.io/code/",
+      "excerpt"		: "An archive of articles sorted by date."
     }
-  
-
   
 
   

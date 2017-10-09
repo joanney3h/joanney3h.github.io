@@ -4,166 +4,13 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://joanney3h.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://joanney3h.github.io" />
-<updated>2017-10-08T18:53:21-07:00</updated>
+<updated>2017-10-08T20:09:59-07:00</updated>
 <id>http://joanney3h.github.io/</id>
 <author>
   <name></name>
   <uri>http://joanney3h.github.io/</uri>
   <email>joanneyeh1234@gmail.com</email>
 </author>
-
-
-<entry>
-  <title type="html"><![CDATA[Full Embedded Typeform Page]]></title>
-  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/advisor/samp-advisor/" />
-  <id>http://joanney3h.github.io/advisor/samp-advisor</id>
-  <published>2016-08-02T00:00:00-07:00</published>
-  <updated>2016-08-02T00:00:00-07:00</updated>
-  <author>
-    <name>Joanne Yeh</name>
-    <uri>http://joanney3h.github.io</uri>
-    <email>joanneyeh1234@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;&lt;a href=&quot;https://pathmoney.typeform.com/to/hG0Epn&quot; class=&quot;btn&quot;&gt;Click to get your rule&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01 Transitional//EN” “http://www.w3.org/TR/html4/loose.dtd”&amp;gt;&lt;/p&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot; /&gt;
-
-  &lt;!--Add the title of your typeform below--&gt;
-  &lt;title&gt;duplicate .SIMPLE - Rules of thumb (copy) (copy)&lt;/title&gt;
-
-  &lt;!--CSS styles that ensure your typeform takes up all the available screen space (DO NOT EDIT!)--&gt;
-  &lt;style type=&quot;text/css&quot;&gt;
-    html{
-      margin: 0;
-      height: 100%;
-      overflow: hidden;
-    }
-    iframe{
-      position: absolute;
-      left:0;
-      right:0;
-      bottom:0;
-      top:0;
-      border:0;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;iframe id=&quot;typeform-full&quot; width=&quot;100%&quot; height=&quot;100%&quot; frameborder=&quot;0&quot; src=&quot;https://pathmoney.typeform.com/to/hG0Epn?embed=full&quot;&gt;&lt;/iframe&gt;
-  &lt;script type=&quot;text/javascript&quot; src=&quot;https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/advisor/samp-advisor/&quot;&gt;Full Embedded Typeform Page&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on August 02, 2016.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Pop Up Typeform Example]]></title>
-  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/advisor/popup-samp/" />
-  <id>http://joanney3h.github.io/advisor/popup-samp</id>
-  <published>2016-08-01T00:00:00-07:00</published>
-  <updated>2016-08-01T00:00:00-07:00</updated>
-  <author>
-    <name>Joanne Yeh</name>
-    <uri>http://joanney3h.github.io</uri>
-    <email>joanneyeh1234@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;h1 id=&quot;get-expert-insights-on-your-money&quot;&gt;Get expert insights on your money.&lt;/h1&gt;
-
-&lt;p&gt;Stop worrying about your finances. 
-We’ve got it all figured out.&lt;/p&gt;
-
-&lt;h3 id=&quot;let-us-make-things-easier-for-you&quot;&gt;Let us make things easier for you:&lt;/h3&gt;
-
-&lt;p&gt;&lt;a class=&quot;typeform-share button&quot; href=&quot;https://pathmoney.typeform.com/to/hG0Epn?&quot; data-mode=&quot;2&quot; target=&quot;_blank&quot;&gt;Get your rule here!&lt;/a&gt;
-&lt;script&gt;(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id=&#39;typef_orm&#39;,b=&#39;https://s3-eu-west-1.amazonaws.com/share.typeform.com/&#39;;if(!gi.call(d,id)){js=ce.call(d,&#39;script&#39;);js.id=id;js.src=b+&#39;share.js&#39;;q=gt.call(d,&#39;script&#39;)[0];q.parentNode.insertBefore(js,q)}id=id+&#39;_&#39;;if(!gi.call(d,id)){qs=ce.call(d,&#39;link&#39;);qs.rel=&#39;stylesheet&#39;;qs.id=id;qs.href=b+&#39;share-button.css&#39;;s=gt.call(d,&#39;head&#39;)[0];s.appendChild(qs,s)}})()&lt;/script&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/advisor/popup-samp/&quot;&gt;Pop Up Typeform Example&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on August 01, 2016.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Intercom Mini Pop Up Example]]></title>
-  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/advisor/intercom-samp/" />
-  <id>http://joanney3h.github.io/advisor/intercom-samp</id>
-  <published>2016-07-31T00:00:00-07:00</published>
-  <updated>2016-07-31T00:00:00-07:00</updated>
-  <author>
-    <name>Joanne Yeh</name>
-    <uri>http://joanney3h.github.io</uri>
-    <email>joanneyeh1234@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;h1 id=&quot;intercom-flow-sample-page&quot;&gt;Intercom Flow Sample Page&lt;/h1&gt;
-
-&lt;p&gt;This has the old version of Intercom’s messenger.&lt;/p&gt;
-
-&lt;script&gt;
-  window.intercomSettings = {
-    app_id: &quot;cbw6mzh6&quot;
-  };
-&lt;/script&gt;
-
-&lt;script&gt;(function(){var w=window;var ic=w.Intercom;if(typeof ic===&quot;function&quot;){ic(&#39;reattach_activator&#39;);ic(&#39;update&#39;,intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement(&#39;script&#39;);s.type=&#39;text/javascript&#39;;s.async=true;s.src=&#39;https://widget.intercom.io/widget/cbw6mzh6&#39;;var x=d.getElementsByTagName(&#39;script&#39;)[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent(&#39;onload&#39;,l);}else{w.addEventListener(&#39;load&#39;,l,false);}}})()&lt;/script&gt;
-
-&lt;h1 id=&quot;pretend-this-is-your-landing-page&quot;&gt;Pretend this is your landing page.&lt;/h1&gt;
-
-&lt;p&gt;In this page, I’ll demonstrate how Intercom will interact with a new user.&lt;/p&gt;
-
-&lt;p&gt;Are you interested in your finances?
-More text about product.&lt;/p&gt;
-
-&lt;p&gt;Get expert insights on your money.&lt;/p&gt;
-
-&lt;p&gt;Something something about rules.&lt;/p&gt;
-
-&lt;p&gt;Pictures pictures pictures.&lt;/p&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/advisor/intercom-samp/&quot;&gt;Intercom Mini Pop Up Example&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on July 31, 2016.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Intercom New Pop Up Example]]></title>
-  <link rel="alternate" type="text/html" href="http://joanney3h.github.io/advisor/intercom-new-samp/" />
-  <id>http://joanney3h.github.io/advisor/intercom-new-samp</id>
-  <published>2016-07-30T00:00:00-07:00</published>
-  <updated>2016-07-30T00:00:00-07:00</updated>
-  <author>
-    <name>Joanne Yeh</name>
-    <uri>http://joanney3h.github.io</uri>
-    <email>joanneyeh1234@gmail.com</email>
-  </author>
-  <content type="html">
-    &lt;h1 id=&quot;intercom-flow-sample-page&quot;&gt;Intercom Flow Sample Page&lt;/h1&gt;
-
-&lt;p&gt;New version of Intercom’s messenger.&lt;/p&gt;
-
-&lt;script&gt;
-  window.intercomSettings = {
-    app_id: &quot;b7w4u8xu&quot;
-  };
-&lt;/script&gt;
-
-&lt;script&gt;(function(){var w=window;var ic=w.Intercom;if(typeof ic===&quot;function&quot;){ic(&#39;reattach_activator&#39;);ic(&#39;update&#39;,intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement(&#39;script&#39;);s.type=&#39;text/javascript&#39;;s.async=true;s.src=&#39;https://widget.intercom.io/widget/b7w4u8xu&#39;;var x=d.getElementsByTagName(&#39;script&#39;)[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent(&#39;onload&#39;,l);}else{w.addEventListener(&#39;load&#39;,l,false);}}})()&lt;/script&gt;
-
-&lt;h3 id=&quot;the-app-should-have-a-nicer-looking-prompt-now-but-there-seems-to-be-a-lag-in-going-live&quot;&gt;The app should have a nicer looking prompt now, but there seems to be a lag in going live.&lt;/h3&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/advisor/intercom-new-samp/&quot;&gt;Intercom New Pop Up Example&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on July 30, 2016.&lt;/p&gt;
-  </content>
-</entry>
 
 
 <entry>
@@ -175,7 +22,7 @@ More text about product.&lt;/p&gt;
   <author>
     <name>Joanne Yeh</name>
     <uri>http://joanney3h.github.io</uri>
-    <email>joanneyeh1234@gmail.com</email>
+    <email>joaney3h@gmail.com</email>
   </author>
   <content type="html">
     &lt;h1 id=&quot;understanding-brand-success-through-behavioral-economics&quot;&gt;Understanding brand success through behavioral economics&lt;/h1&gt;
@@ -303,7 +150,7 @@ More text about product.&lt;/p&gt;
   <author>
     <name>Joanne Yeh</name>
     <uri>http://joanney3h.github.io</uri>
-    <email>joanneyeh1234@gmail.com</email>
+    <email>joaney3h@gmail.com</email>
   </author>
   <content type="html">
     &lt;h1 id=&quot;chinookdb-analyses&quot;&gt;ChinookDB Analyses&lt;/h1&gt;
@@ -390,7 +237,7 @@ More text about product.&lt;/p&gt;
   <author>
     <name>Joanne Yeh</name>
     <uri>http://joanney3h.github.io</uri>
-    <email>joanneyeh1234@gmail.com</email>
+    <email>joaney3h@gmail.com</email>
   </author>
   <content type="html">
     &lt;h1 id=&quot;math-185&quot;&gt;Math 185&lt;/h1&gt;
@@ -484,7 +331,7 @@ More text about product.&lt;/p&gt;
   <author>
     <name>Joanne Yeh</name>
     <uri>http://joanney3h.github.io</uri>
-    <email>joanneyeh1234@gmail.com</email>
+    <email>joaney3h@gmail.com</email>
   </author>
   <content type="html">
     &lt;p&gt;Article about the hackathon &lt;a href=&quot;http://ucsdnews.ucsd.edu/pressrelease/university_students_turn_satellite_images_into_policy_analysis&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://ds3.io/?page_id=161&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
