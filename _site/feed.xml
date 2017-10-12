@@ -4,12 +4,12 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://joanney3h.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://joanney3h.github.io" />
-<updated>2017-10-08T20:09:59-07:00</updated>
+<updated>2017-10-11T22:27:08-07:00</updated>
 <id>http://joanney3h.github.io/</id>
 <author>
-  <name></name>
+  <name>Joanne Yeh</name>
   <uri>http://joanney3h.github.io/</uri>
-  <email>joanneyeh1234@gmail.com</email>
+  <email>joanney3h@gmail.com</email>
 </author>
 
 
@@ -136,7 +136,7 @@
 &lt;p&gt;&lt;em&gt;Not convinced yet?&lt;/em&gt;
 &lt;em&gt;Shoot me over some counter-examples and let’s discuss.&lt;/em&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/case/glossier/&quot;&gt;Less is More: How small retail companies leverage choice overload to grow &lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on May 15, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/case/glossier/&quot;&gt;Less is More: How small retail companies leverage choice overload to grow &lt;/a&gt; was originally published by Joanne Yeh at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on May 15, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -223,7 +223,7 @@
 &lt;p&gt;&lt;em&gt;Rock 157, Latin 91, Metal 64, Alternative &amp;amp; Punk 50, Jazz 22&lt;/em&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/chinook-sql/&quot;&gt;SQL Analysis with the Chinook DB&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on April 24, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/chinook-sql/&quot;&gt;SQL Analysis with the Chinook DB&lt;/a&gt; was originally published by Joanne Yeh at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on April 24, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -283,7 +283,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/images/power-graph.png&quot; alt=&quot;graph&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/comp-stats-math/&quot;&gt;Computational Statistics&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on March 25, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/comp-stats-math/&quot;&gt;Computational Statistics&lt;/a&gt; was originally published by Joanne Yeh at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on March 25, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -295,9 +295,9 @@
   <published>2016-03-23T00:00:00-07:00</published>
   <updated>2016-03-23T00:00:00-07:00</updated>
   <author>
-    <name></name>
+    <name>Joanne Yeh</name>
     <uri>http://joanney3h.github.io</uri>
-    <email>joanneyeh1234@gmail.com</email>
+    <email>joanney3h@gmail.com</email>
   </author>
   <content type="html">
     &lt;h1 id=&quot;local-data-hackathon-project&quot;&gt;Local Data Hackathon Project&lt;/h1&gt;
@@ -317,7 +317,7 @@
 
 &lt;p&gt;Complete project &lt;a href=&quot;http://ds3.io/?page_id=151&quot;&gt;here&lt;/a&gt; as well as on my &lt;a href=&quot;https://github.com/joanney3h&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/datathon/&quot;&gt;Are some teachers just meaner than others?&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on March 23, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/datathon/&quot;&gt;Are some teachers just meaner than others?&lt;/a&gt; was originally published by Joanne Yeh at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on March 23, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -351,7 +351,7 @@
 
 &lt;p&gt;Although we start very small and specific, counting fishing boats with satellite imagery is an extremely scaleable way to fill in the black hole of fishing data in previously data-poor countries. It would give us way more tools to help fishermen around the world maintain a sustainable fishing level. We can also inform governments with this data to make better regulations to fishing where there is little to no restrictions before.  Overall, an efficient way to methodically process this data will provide many more  people ways to make responsible data-driven decisions for the future of the ocean wildlife.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/big-pixel/&quot;&gt;Predicting the Impact of Small-Scale Fisheries&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on February 23, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/code-posts/big-pixel/&quot;&gt;Predicting the Impact of Small-Scale Fisheries&lt;/a&gt; was originally published by Joanne Yeh at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on February 23, 2016.&lt;/p&gt;
   </content>
 </entry>
 
@@ -363,9 +363,9 @@
   <published>2015-11-01T00:00:00-07:00</published>
   <updated>2015-11-01T00:00:00-07:00</updated>
   <author>
-    <name></name>
+    <name>Joanne Yeh</name>
     <uri>http://joanney3h.github.io</uri>
-    <email>joanneyeh1234@gmail.com</email>
+    <email>joanney3h@gmail.com</email>
   </author>
   <content type="html">
     &lt;p&gt;Click the title to go to their page!&lt;/p&gt;
@@ -374,7 +374,7 @@
 
 &lt;p&gt;Long and thought-provoking.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/cool-links/exponent/&quot;&gt;Exponent/Stratechery (Podcast/Website)&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on November 01, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://joanney3h.github.io/cool-links/exponent/&quot;&gt;Exponent/Stratechery (Podcast/Website)&lt;/a&gt; was originally published by Joanne Yeh at &lt;a href=&quot;http://joanney3h.github.io&quot;&gt;Joanne Yeh&lt;/a&gt; on November 01, 2015.&lt;/p&gt;
   </content>
 </entry>
 

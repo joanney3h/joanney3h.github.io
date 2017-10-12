@@ -58,14 +58,6 @@
 
   
     ,{
-      "title"			: "Design",
-      "link"			: "http://joanney3h.github.io/design/",
-      "excerpt"		: "Things I’ve drawn with a computer"
-    }
-  
-
-  
-    ,{
       "title"			: "Things I think are cool",
       "link"			: "http://joanney3h.github.io/random/",
       "excerpt"		: "An archive of posts sorted by date."
@@ -83,6 +75,14 @@
       "title"			: "Coding Projects",
       "link"			: "http://joanney3h.github.io/code/",
       "excerpt"		: "An archive of articles sorted by date."
+    }
+  
+
+  
+    ,{
+      "title"			: "Design",
+      "link"			: "http://joanney3h.github.io/design/",
+      "excerpt"		: "Things I’ve drawn with a computer"
     }
   
 

@@ -1,7 +1,7 @@
 # Site wide configuration
 title: Joanne Yeh
 locale: en_US
-description: My personal webpage and portfolio
+description: Personal page and portfolio
 logo: site-logo.png
 search: true
 url: http://joanney3h.github.io
@@ -47,11 +47,11 @@ titlecase: true
 
 # Site owner
 owner:
-  name:
+  name: Joanne Yeh
   avatar: bio-photo.jpg
-  email: joanneyeh1234@gmail.com
+  email: joanney3h@gmail.com
   disqus-shortname:
-  twitter: #username
+  twitter: joanney3h
   facebook: #username
   github: joanney3h
   stackexchange: #http://stackoverflow.com/users/123456/username
