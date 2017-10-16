@@ -2,6 +2,22 @@
 
   
     {
+      "title"			: "Increasing Attendance and Tax-Savings at VITA Sites",
+      "link"			: "http://joanney3h.github.io/case/vita-tax-interventions/",
+      "excerpt"		: "Speaking Presentation"
+    }
+  
+
+  
+    ,{
+      "title"			: "Generating power calculation matrices in Python",
+      "link"			: "http://joanney3h.github.io/code/power-calc-matrices/",
+      "excerpt"		: "Jupyter Notebook Tutorial"
+    }
+  
+
+  
+    ,{
       "title"			: "Less is More: How small retail companies leverage choice overload to grow ",
       "link"			: "http://joanney3h.github.io/case/glossier/",
       "excerpt"		: "Understanding brand success through behavioral economics"
@@ -72,7 +88,7 @@
 
   
     ,{
-      "title"			: "Coding Projects",
+      "title"			: "Programming Projects",
       "link"			: "http://joanney3h.github.io/code/",
       "excerpt"		: "An archive of articles sorted by date."
     }

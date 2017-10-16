@@ -1,0 +1,520 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Generating power calculation matrices in Python &#8211; Joanne Yeh</title>
+<meta name="description" content="Jupyter Notebook Tutorial">
+<meta name="keywords" content="">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Generating power calculation matrices in Python">
+<meta name="twitter:description" content="Jupyter Notebook Tutorial">
+<meta name="twitter:site" content="@joanney3h">
+<meta name="twitter:creator" content="@joanney3h">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://joanney3h.github.io/images/site-logo.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Generating power calculation matrices in Python">
+<meta property="og:description" content="Jupyter Notebook Tutorial">
+<meta property="og:url" content="http://joanney3h.github.io/code/power-calc-matrices/">
+<meta property="og:site_name" content="Joanne Yeh">
+
+
+
+
+
+<link rel="canonical" href="http://joanney3h.github.io/code/power-calc-matrices/">
+<link href="http://joanney3h.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Joanne Yeh Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://joanney3h.github.io/assets/css/main.css">
+
+<!-- Webfonts -->
+<!-- <script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script> -->
+
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto+Mono:400,500,700|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://joanney3h.github.io/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://joanney3h.github.io/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://joanney3h.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://joanney3h.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://joanney3h.github.io/favicon.png">
+
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://joanney3h.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://joanney3h.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://joanney3h.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://joanney3h.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+<!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("b3750a80b246abde2982520d5f015923");</script>
+<!-- end Mixpanel -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65530894-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-65530894-1');
+</script>
+
+
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://joanney3h.github.io/" >About Me</a></li>
+		  
+		    
+		    <li><a href="http://joanney3h.github.io/writing/" >Writing</a></li>
+		  
+		    
+		    <li><a href="http://joanney3h.github.io/design/" >Design</a></li>
+		  
+		    
+		    <li><a href="http://joanney3h.github.io/code/" >Code</a></li>
+		  
+		    
+		    <li><a href="http://joanney3h.github.io/random/" >Random</a></li>
+		  
+		    
+		    <li><a href="http://joanney3h.github.io/search/" >Search</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          
+        </ul>
+        
+          <h1 class="entry-title">Generating power calculation matrices in Python</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://joanney3h.github.io/images/bio-photo.jpg" class="bio-photo" alt="Joanne Yeh bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Joanne Yeh</span></span>
+        <span class="entry-date date published"><time datetime="2017-10-14T00:00:00-07:00"><i class="fa fa-calendar-o"></i> October 14, 2017</time></span>
+        
+        
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=&amp;text=Generating%20power%20calculation%20matrices%20in%20Python&amp;url=http://joanney3h.github.io/code/power-calc-matrices/&amp;via=joanney3h" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://joanney3h.github.io/code/power-calc-matrices/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://joanney3h.github.io/code/power-calc-matrices/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <h1 id="need-a-quick-way-to-see-how-your-minimum-detectable-effect-change-your-sample-size">Need a quick way to see how your minimum detectable effect change your sample size?</h1>
+<p>Plus in your relevant information and instantly get a matrix of sample sizes you need for various effect sizes</p>
+
+<h3 id="are-retailername-shoppers-in-ga-fundamentally-different-from-retailername-shoppers-in-the-4-other-states-sc-va-tn-md">Are RetailerName shoppers in GA fundamentally different from RetailerName shoppers in the 4 other states (SC, VA, TN, MD)?</h3>
+
+<p>Date: September 21th, 2017 / Joanne Yeh</p>
+
+<h1 id="query-and-data-in-use">Query and Data In Use</h1>
+<p><strong>Here is the massive pull I used to get total_august.csv</strong></p>
+
+<h1 id="environment-setup">Environment Setup</h1>
+<p><strong>Import and set up data file</strong></p>
+
+<p>Should return a dataframe called dat_spend which has all the relevant columns.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    <span class="c"># MODIFY THIS: Write new name of data file here</span>
+
+    <span class="n">data_file_to_use</span> <span class="o">=</span> <span class="s">'total_august.csv'</span>
+
+    <span class="c">#georgia_file = 'georgia_august.csv'</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+    <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+
+    <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+    <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">figure</span>
+    <span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+    <span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+    <span class="kn">import</span> <span class="nn">statsmodels.stats.api</span> <span class="kn">as</span> <span class="nn">sms</span>
+
+    <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+    <span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_formats</span><span class="o">=</span><span class="p">[</span><span class="s">'svg'</span><span class="p">]</span>
+
+</code></pre>
+</div>
+
+<p>Create function to do individual comparisons with less writing</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">compare_states</span><span class="p">(</span><span class="n">state1</span><span class="p">,</span> <span class="n">state2</span><span class="p">,</span> <span class="n">metric</span><span class="p">):</span>
+    
+    <span class="n">tstat</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">p_val</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">if</span> <span class="n">metric</span> <span class="ow">is</span> <span class="s">'num_visits'</span><span class="p">:</span>
+        <span class="n">tstat</span><span class="p">,</span> <span class="n">p_val</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">fl_shoppers</span><span class="p">[(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">retailer</span> <span class="o">==</span> <span class="s">'FOOD LION'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state1</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">uid</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> \
+                <span class="n">fl_shoppers</span><span class="p">[(</span><span class="n">dat_spend</span><span class="o">.</span><span class="n">retailer</span> <span class="o">==</span> <span class="s">'FOOD LION'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state2</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">uid</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+        
+        <span class="k">print</span> <span class="s">"Mean of "</span><span class="p">,</span> <span class="n">state1</span><span class="p">,</span> <span class="s">"is"</span><span class="p">,</span> <span class="n">dat_spend</span><span class="p">[(</span><span class="n">dat_spend</span><span class="o">.</span><span class="n">retailer</span> <span class="o">==</span> <span class="s">'FOOD LION'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">dat_spend</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state1</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">uid</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> 
+        <span class="k">print</span> <span class="s">"Mean of "</span><span class="p">,</span> <span class="n">state2</span><span class="p">,</span> <span class="s">"is"</span><span class="p">,</span> <span class="n">dat_spend</span><span class="p">[(</span><span class="n">dat_spend</span><span class="o">.</span><span class="n">retailer</span> <span class="o">==</span> <span class="s">'FOOD LION'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">dat_spend</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state2</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">uid</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> 
+    
+    <span class="k">elif</span> <span class="n">metric</span> <span class="ow">is</span> <span class="s">'total_spend_fl'</span><span class="p">:</span>
+        <span class="n">tstat</span><span class="p">,</span> <span class="n">p_val</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">fl_shoppers</span><span class="p">[(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">retailer</span> <span class="o">==</span> <span class="s">'FOOD LION'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state1</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">amount_cents</span><span class="o">.</span><span class="nb">sum</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> \
+                <span class="n">fl_shoppers</span><span class="p">[(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">retailer</span> <span class="o">==</span> <span class="s">'FOOD LION'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state2</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">amount_cents</span><span class="o">.</span><span class="nb">sum</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+
+        <span class="k">print</span> <span class="s">"Mean of "</span><span class="p">,</span> <span class="n">state1</span><span class="p">,</span> <span class="s">"is"</span><span class="p">,</span> <span class="n">fl_shoppers</span><span class="p">[(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">retailer</span> <span class="o">==</span> <span class="s">'FOOD LION'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state1</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">amount_cents</span><span class="o">.</span><span class="nb">sum</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+        <span class="k">print</span> <span class="s">"Mean of "</span><span class="p">,</span> <span class="n">state2</span><span class="p">,</span> <span class="s">"is"</span><span class="p">,</span> <span class="n">fl_shoppers</span><span class="p">[(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">retailer</span> <span class="o">==</span> <span class="s">'FOOD LION'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state2</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">amount_cents</span><span class="o">.</span><span class="nb">sum</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+    
+    <span class="k">elif</span> <span class="n">metric</span> <span class="ow">is</span> <span class="s">'total_spend_all'</span><span class="p">:</span>
+        <span class="n">tstat</span><span class="p">,</span> <span class="n">p_val</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">fl_shoppers</span><span class="p">[</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state1</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">amount_cents</span><span class="o">.</span><span class="nb">sum</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> \
+                <span class="n">fl_shoppers</span><span class="p">[</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state2</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">amount_cents</span><span class="o">.</span><span class="nb">sum</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+        
+        <span class="k">print</span> <span class="s">"Mean of "</span><span class="p">,</span> <span class="n">state1</span><span class="p">,</span> <span class="s">"is"</span><span class="p">,</span> <span class="n">fl_shoppers</span><span class="p">[</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state1</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">amount_cents</span><span class="o">.</span><span class="nb">sum</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+        <span class="k">print</span> <span class="s">"Mean of "</span><span class="p">,</span> <span class="n">state2</span><span class="p">,</span> <span class="s">"is"</span><span class="p">,</span> <span class="n">fl_shoppers</span><span class="p">[</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state2</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'uid'</span><span class="p">)</span><span class="o">.</span><span class="n">amount_cents</span><span class="o">.</span><span class="nb">sum</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+    
+    <span class="k">elif</span> <span class="n">metric</span> <span class="ow">is</span> <span class="s">'small_dollar_pct'</span><span class="p">:</span>
+        <span class="n">tstat</span><span class="p">,</span> <span class="n">p_val</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">percentage_small_transactions</span><span class="p">[</span><span class="n">percentage_small_transactions</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state1</span><span class="p">]</span><span class="o">.</span><span class="n">pct</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> \
+                <span class="n">percentage_small_transactions</span><span class="p">[</span><span class="n">percentage_small_transactions</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state2</span><span class="p">]</span><span class="o">.</span><span class="n">pct</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+        
+        <span class="k">print</span> <span class="s">"Mean of "</span><span class="p">,</span> <span class="n">state1</span><span class="p">,</span> <span class="s">"is"</span><span class="p">,</span> <span class="n">percentage_small_transactions</span><span class="p">[</span><span class="n">percentage_small_transactions</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state1</span><span class="p">]</span><span class="o">.</span><span class="n">pct</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+        <span class="k">print</span> <span class="s">"Mean of "</span><span class="p">,</span> <span class="n">state2</span><span class="p">,</span> <span class="s">"is"</span><span class="p">,</span> <span class="n">percentage_small_transactions</span><span class="p">[</span><span class="n">percentage_small_transactions</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="n">state2</span><span class="p">]</span><span class="o">.</span><span class="n">pct</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s">"error, metric not correct. Use num_vists, total_spend_fl, total_spend_all, or small_dollar_pct"</span>
+    
+    <span class="k">if</span> <span class="n">p_val</span> <span class="o">&lt;=</span> <span class="mf">0.05</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s">"Statistically significant, pval:"</span><span class="p">,</span> <span class="n">p_val</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s">"Not statistically significant, pval:"</span><span class="p">,</span> <span class="n">p_val</span> 
+        
+    <span class="k">return</span>    
+</code></pre>
+</div>
+
+<p>Run the blocks below to clean and create necessary dataframes</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">dat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">data_file_to_use</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">';'</span><span class="p">)</span>
+<span class="n">dat</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s">'uid'</span><span class="p">,</span> <span class="s">'tid'</span><span class="p">,</span> <span class="s">'date'</span><span class="p">,</span> <span class="s">'retailer'</span><span class="p">,</span> <span class="s">'amount_cents'</span><span class="p">,</span> <span class="s">'transaction_type'</span><span class="p">,</span> <span class="s">'state'</span><span class="p">]</span>
+
+<span class="c"># clean the retailer names</span>
+<span class="n">dat</span><span class="o">.</span><span class="n">retailer</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="n">dat</span><span class="o">.</span><span class="n">retailer</span><span class="p">)</span>
+<span class="n">dat</span><span class="o">.</span><span class="n">retailer</span> <span class="o">=</span> <span class="n">dat</span><span class="o">.</span><span class="n">retailer</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="s">u"</span><span class="se">\xa0</span><span class="s">"</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s">" "</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">dat</span><span class="o">.</span><span class="n">retailer</span> <span class="o">=</span> <span class="n">dat</span><span class="o">.</span><span class="n">retailer</span><span class="o">.</span><span class="nb">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">dat</span><span class="o">.</span><span class="n">retailer</span> <span class="o">=</span> <span class="n">dat</span><span class="o">.</span><span class="n">retailer</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="s">'-|#|</span><span class="err">\</span><span class="s">.'</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s">' '</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">dat</span><span class="o">.</span><span class="n">retailer</span> <span class="o">=</span> <span class="n">dat</span><span class="o">.</span><span class="n">retailer</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="s">'[0-9]*$'</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s">''</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">dat</span><span class="o">.</span><span class="n">retailer</span> <span class="o">=</span> <span class="n">dat</span><span class="o">.</span><span class="n">retailer</span><span class="o">.</span><span class="nb">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">dat</span><span class="o">.</span><span class="n">retailer</span> <span class="o">=</span> <span class="n">dat</span><span class="o">.</span><span class="n">retailer</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="s">'WAL MART'</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span><span class="s">'WALMART'</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">dat</span><span class="o">.</span><span class="n">retailer</span> <span class="o">=</span> <span class="n">dat</span><span class="o">.</span><span class="n">retailer</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="s">'WALMART SUPER CENTER'</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s">'WM SUPERCENTER'</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="c"># exclude food benefit authorization from calculations and blank retailer </span>
+<span class="c"># names because usually adminstrative type fees</span>
+<span class="n">dat_spend</span> <span class="o">=</span> <span class="n">dat</span><span class="p">[</span><span class="o">~</span><span class="n">dat</span><span class="p">[</span><span class="s">'retailer'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s">'FOOD  BENEFIT AUTHORIZATION'</span><span class="p">,</span><span class="s">''</span><span class="p">])]</span>
+
+<span class="c"># remove all transactions which are not spending</span>
+<span class="n">dat_spend</span> <span class="o">=</span> <span class="n">dat_spend</span><span class="p">[</span><span class="n">dat_spend</span><span class="o">.</span><span class="n">amount_cents</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># Get all transactions from users who have shopped at Food Lion</span>
+
+<span class="n">fl_shoppers</span> <span class="o">=</span> <span class="n">dat_spend</span><span class="p">[</span><span class="n">dat_spend</span><span class="p">[</span><span class="s">'uid'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">dat_spend</span><span class="p">[</span><span class="n">dat_spend</span><span class="o">.</span><span class="n">retailer</span> <span class="o">==</span> <span class="s">'FOOD LION'</span><span class="p">]</span><span class="o">.</span><span class="n">uid</span><span class="o">.</span><span class="n">unique</span><span class="p">())]</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># pre-filter some dataframes for use in the apply portion later</span>
+
+<span class="n">small_transactions</span> <span class="o">=</span> <span class="n">fl_shoppers</span><span class="p">[</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">amount_cents</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">600</span><span class="p">]</span>
+<span class="n">food_lion_transactions</span> <span class="o">=</span> <span class="n">fl_shoppers</span><span class="p">[</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">retailer</span> <span class="o">==</span> <span class="s">'FOOD LION'</span><span class="p">]</span>
+
+
+<span class="c"># create dataframe that has counts for total transactions, small dollar where each row is one person</span>
+
+<span class="n">percentage_small_transactions</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">uid</span><span class="o">.</span><span class="n">unique</span><span class="p">(),</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s">'fl_shopper_id'</span><span class="p">])</span>
+
+<span class="n">percentage_small_transactions</span><span class="p">[</span><span class="s">'total_transactions'</span><span class="p">]</span> <span class="o">=</span> <span class="n">percentage_small_transactions</span><span class="p">[</span><span class="s">'fl_shopper_id'</span><span class="p">]</span><span class="o">.</span><span class="nb">apply</span>\
+<span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">fl_shoppers</span><span class="p">[</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">uid</span> <span class="o">==</span> <span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">tid</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+
+<span class="n">percentage_small_transactions</span><span class="p">[</span><span class="s">'small_dollar_transctions'</span><span class="p">]</span> <span class="o">=</span> <span class="n">percentage_small_transactions</span><span class="p">[</span><span class="s">'fl_shopper_id'</span><span class="p">]</span><span class="o">.</span><span class="nb">apply</span>\
+<span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">small_transactions</span><span class="p">[</span><span class="n">small_transactions</span><span class="o">.</span><span class="n">uid</span> <span class="o">==</span> <span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">tid</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+
+
+<span class="c"># calculate percentage based off these two values and place in same column</span>
+<span class="n">percentage_small_transactions</span><span class="p">[</span><span class="s">'pct'</span><span class="p">]</span> <span class="o">=</span> <span class="n">percentage_small_transactions</span><span class="p">[</span><span class="s">'small_dollar_transctions'</span><span class="p">]</span><span class="o">/</span><span class="n">percentage_small_transactions</span><span class="p">[</span><span class="s">'total_transactions'</span><span class="p">]</span> 
+
+
+<span class="c"># get first entry of series in column 6, to get user's state</span>
+
+<span class="n">percentage_small_transactions</span><span class="p">[</span><span class="s">'state'</span><span class="p">]</span> <span class="o">=</span> <span class="n">percentage_small_transactions</span><span class="p">[</span><span class="s">'fl_shopper_id'</span><span class="p">]</span><span class="o">.</span><span class="nb">apply</span>\
+<span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">fl_shoppers</span><span class="p">[</span><span class="n">fl_shoppers</span><span class="o">.</span><span class="n">uid</span> <span class="o">==</span> <span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
+
+
+</code></pre>
+</div>
+
+<p>Preview the first 5 lines of the dataframes</p>
+
+<p>Dataframe of all spending transactions from those states during that time period</p>
+
+<p>Dataframe of all spending transactions with people who have shopped at Food Lion at least once during this time period</p>
+
+<p>Dataframe that contains percentage of small dollar transactions by Food Lion shopper</p>
+
+<h1 id="analysis-section">Analysis Section</h1>
+
+<h3 id="main-question-to-answer-are-retailername-shoppers-in-ga-fundamentally-different-from-retailername-shoppers-in-the-4-other-states-sc-va-tn-md">Main question to answer: Are RetailerName shoppers in GA fundamentally different from RetailerName shoppers in the 4 other states (SC, VA, TN, MD)?</h3>
+
+<p>In a period of 30 days in September. // <strong>August 1 to before Sept 1</strong>
+* Total number of times each person went to Food Lion
+* Total spend per person at Food Lion
+* Total spend per person
+* Percentage of transactions under $6</p>
+
+<p>Added:
+* Average spend per trip</p>
+
+<h2 id="between-ga-and-sc">Between GA and SC</h2>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">compare_states</span><span class="p">(</span><span class="s">'TN'</span><span class="p">,</span> <span class="s">'SC'</span><span class="p">,</span> <span class="s">'num_visits'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>/usr/local/lib/python2.7/site-packages/ipykernel_launcher.py:7: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+  import sys
+
+
+Mean of  TN is 2.27788461538
+Mean of  SC is 3.05244483867
+Statistically significant, pval: 3.09797045076e-16
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">compare_states</span><span class="p">(</span><span class="s">'TN'</span><span class="p">,</span> <span class="s">'SC'</span><span class="p">,</span> <span class="s">'total_spend_fl'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Mean of  TN is -9356.99230769
+Mean of  SC is -11349.7171527
+Statistically significant, pval: 2.63088834821e-07
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">compare_states</span><span class="p">(</span><span class="s">'GA'</span><span class="p">,</span> <span class="s">'SC'</span><span class="p">,</span> <span class="s">'total_spend_all'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Mean of  GA is -46167.4709302
+Mean of  SC is -42576.192926
+Statistically significant, pval: 0.000103216028067
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">compare_states</span><span class="p">(</span><span class="s">'TN'</span><span class="p">,</span> <span class="s">'SC'</span><span class="p">,</span> <span class="s">'small_dollar_pct'</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Mean of  TN is 0.25880529809
+Mean of  SC is 0.242008259508
+Statistically significant, pval: 0.00635070323556
+</code></pre>
+</div>
+
+<h2 id="number-of-visits">Number of Visits</h2>
+<p>How do RetailerName shoppers in Georgia compare to RetailerMa,e shoppers in the four other states, regarding the total number of times each person visited Retailer Name?</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c"># takes all RetailerName transactions, sums visits for each person, then takes average</span>
+
+<span class="n">dat_spend</span><span class="p">[</span><span class="n">dat_spend</span><span class="o">.</span><span class="n">retailer</span> <span class="o">==</span> <span class="s">'FOOD LION'</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s">'state'</span><span class="p">,</span><span class="s">'uid'</span><span class="p">])</span><span class="o">.</span><span class="n">uid</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">level</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>state
+GA    2.475291
+MD    2.695441
+SC    3.052445
+TN    2.277885
+VA    3.493663
+Name: uid, dtype: float64
+</code></pre>
+</div>
+
+<p>We can run a t-test on this:</p>
+
+<h2 id="total-spend-per-person-at-food-lion">Total Spend Per Person at Food Lion</h2>
+<p>Of those who have shopped at Food Lion during this time period, total spend at FL during that time period, by person</p>
+
+<h2 id="total-spend-per-person-all-transactions">Total Spend Per Person (All Transactions)</h2>
+<p>Of those who have shopped at Food Lion during this time period, total spend during that time period, by person</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>python
+# takes all Food Lion transactions, sums visits for each person, then takes average
+
+fl_shoppers.groupby(['state','uid']).amount_cents.sum().mean(level = 0)
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>state
+GA   -46167.470930
+MD   -46530.272551
+SC   -42576.192926
+TN   -43508.835577
+VA   -41474.117455
+Name: amount_cents, dtype: float64
+</code></pre>
+</div>
+
+<h2 id="percentage-of-transactions-under-6">Percentage of Transactions under $6</h2>
+
+<p>How does the percentage of transactions under $6 compare across Food Lion shoppers between these states?</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">percentage_small_transactions</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">'state'</span><span class="p">)</span><span class="o">.</span><span class="n">pct</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">level</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>state
+GA    0.255696
+MD    0.245640
+SC    0.242008
+TN    0.258805
+VA    0.294904
+Name: pct, dtype: float64
+</code></pre>
+</div>
+
+<p>Run t-test if desired</p>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://joanney3h.github.io/case/glossier/" class="btn" title="Less is More: How small retail companies leverage choice overload to grow ">Previous</a>
+      
+      
+        <a href="http://joanney3h.github.io/case/vita-tax-interventions/" class="btn" title="Increasing Attendance and Tax-Savings at VITA Sites">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+
+
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2017 Joanne Yeh<!--Joanne Yeh. -->
+<!--Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.
+--></span>
+<div class="social-icons">
+	
+	
+	
+	<a href="https://linkedin.com/in/joanneyeh" title="Joanne Yeh on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	
+	<a href="https://twitter.com/joanney3h" title="Joanne Yeh on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="https://instagram.com/joanney3h" title="Joanne Yeh on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="https://github.com/joanney3h" title="Joanne Yeh on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://joanney3h.github.io';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://joanney3h.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://joanney3h.github.io/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ 'https://www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-75591306-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = 'https://stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+</body>
+</html>
